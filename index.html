@@ -1,6 +1,21 @@
 <html>
 
 <head>
+
+	<!--inside <head></head>-->
+<script type='text/javascript' src='https://cdn.jsdelivr.net/npm/countly-sdk-web@latest/lib/countly.min.js'></script>
+<script type='text/javascript'>
+
+Countly.init({
+  // server credentials
+  app_key: "2ecdd025b699d810e756b878713fb8f4dadf9e2d",
+  url: "https://dev-meghana.count.ly"
+});
+// Track sessions and page views automatically (recommended)
+Countly.track_sessions();
+Countly.track_pageview();
+</script>
+
 	<!-- CSS -->
 	<link rel="stylesheet" href="index.css">
 	<!-- Font Awesome CDN -->
